@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Memórias de Davi</title>
+  <link rel="stylesheet" href="./assets/jquery-ui.css">
+  <style>
+  .ui-widget-content{width: fit-content; border:none; background-color: transparent;}
+  body{
+    background-image: url(./memorias/backgroundImg.png);
+    background-color: #cccccc; 
+    height: 100vh;
+    background-position: top center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 0px 0px 4000px rgba(0, 0, 0, 0.671) inset;
+    margin: 0;
+  }
+
+  #draggable10, #draggable9, #draggable8, #draggable7, #draggable6, #draggable5, #draggable4, #draggable3,
+  #draggable2, #draggable{
+    position: absolute;
+    top: 0;
+    width: 200px;
+  }
+  </style>
+  <script src="./assets/jquery-3.6.0.js"></script>
+  <script src="./assets/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#draggable" ).draggable();
+    $( "#draggable2" ).draggable();
+    $( "#draggable3" ).draggable();
+    $( "#draggable4" ).draggable();
+    $( "#draggable5" ).draggable();
+    $( "#draggable6" ).draggable();
+    $( "#draggable7" ).draggable();
+  } );
+  </script>
+</head>
+<body>
+ 
+<div id="draggable" class="ui-widget-content">
+  <img src="./memorias/img1.png" style="width: 230px;">
+</div>
+<div id="draggable2" class="ui-widget-content">
+  <img src="./memorias/img2.png" style="width: 230px;">
+</div>
+<div id="draggable3" class="ui-widget-content">
+  <img src="./memorias/img3.png" style="width: 230px;">
+</div>
+<div id="draggable4" class="ui-widget-content">
+  <img src="./memorias/img4.png" style="width: 230px;">
+</div>
+<div id="draggable5" class="ui-widget-content">
+  <img src="./memorias/img5.png" style="width: 230px;">
+</div>
+<div id="draggable6" class="ui-widget-content">
+  <img src="./memorias/img6.png" style="width: 230px;">
+</div>
+<div id="draggable7" class="ui-widget-content">
+  <img src="./memorias/papel.png">
+</div>
+ 
+ 
+</body>
+</html>
